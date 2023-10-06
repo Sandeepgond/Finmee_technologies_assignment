@@ -1,5 +1,9 @@
 import React from 'react'
 import "./ProductPage.css"
+import prod1 from "../assests/prod1.jpg"
+import prod2 from "../assests/prod2.jpg"
+import prod3 from "../assests/prod3.jpg"
+import prod4 from "../assests/prod4.png"
 
 const ProductPage = () => {
   return (
@@ -11,12 +15,12 @@ const ProductPage = () => {
             <a href="https://ntwist.com/mine-to-mill-to-mine-optimization/" ><button className='btn'>Read More</button></a>
         </div>
         <div>
-            <img src="https://ntwist.com/wp-content/uploads/2023/01/iStock-1339284457-1536x1024.jpg" alt="" />
+            <img src={prod1} alt="" />
         </div>
     </div><br/>
     <div className='product_items'>
         <div>
-            <img src="https://ntwist.com/wp-content/uploads/2021/12/iStock-1284372575.jpg" alt="" />
+            <img src= {prod2} alt="" />
         </div>
         <div>
             <h1>Sustainability</h1>
@@ -32,12 +36,12 @@ const ProductPage = () => {
              <a href="https://ntwist.com/mine-to-mill-to-mine-optimization/" ><button className='btn'>Read More</button></a>
         </div>
         <div>
-            <img src="https://ntwist.com/wp-content/uploads/2021/12/iStock-1322302283.jpg" alt="" />
+            <img src= {prod3} alt="" />
         </div>
     </div> <br/><br/>
     <div className='product_items'>
         <div>
-            <img src="https://ntwist.com/wp-content/uploads/2022/03/2021-02-oil-and-gas-digital-hero-e1648984580884.png" alt="" />
+            <img src={prod4} alt="" />
         </div>
         <div>
             <h1>Oil & Gas</h1>

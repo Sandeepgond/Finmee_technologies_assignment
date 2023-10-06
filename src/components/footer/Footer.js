@@ -2,13 +2,14 @@ import React from 'react'
 import "./Footer.css"
 import {AiOutlineLinkedin} from "react-icons/ai"
 import {BiLogoTwitter} from "react-icons/bi"
+import ntwistlightfooterlogo from "../assests/ntwistlightfooterlogo.png"
 
 const Footer = () => {
   return (
     <>
         <div className='footer_box'>
             <div className='footer_logo'>
-                <img src="https://ntwist.com/wp-content/uploads/2021/12/ntwistlight.png" alt="" />
+                <img src={ntwistlightfooterlogo} alt="" />
             </div>
             <div className='links'>
                 <div>Home</div>

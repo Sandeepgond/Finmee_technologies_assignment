@@ -1,5 +1,6 @@
 import React from 'react'
 import "./UpperSection.css"
+import systeminage from "../assests/systemimage.png"
 
 const UpperSection = () => {
   return (
@@ -12,7 +13,7 @@ const UpperSection = () => {
             <a href="https://ntwist.com/mine-to-mill-to-mine-optimization/" ><button>Read More</button></a>
          </div>
          <div>
-            <img className='system_img' src="https://ntwist.com/wp-content/uploads/2023/01/home-image-icons-v6.png" alt="" />
+            <img className='system_img' src={systeminage} alt="" />
          </div>
       </div>
       {/* <select className='language_selection'>

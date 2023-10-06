@@ -3,6 +3,7 @@ import "./Header.css"
 import { Link } from 'react-router-dom'
 import { FiMenu } from 'react-icons/fi'; 
 // import {TiArrowSortedDown} from "react-icons/ti"
+import ntwistlogodark from "../assests/ntwistlogodark.png"
 
 const Header = () => {
    const [isOpen, setIsOpen] = useState(false);
@@ -14,7 +15,7 @@ const Header = () => {
    <>
       <div className='nav'>
          <div className='left_nav'>
-            <img src="https://ntwist.com/wp-content/uploads/2021/12/ntwist-logo-dark.png" alt="" />
+            <img src={ntwistlogodark} alt="" />
          </div>
          <div className={`right_nav ${isOpen ? 'open' : ''}`}>
             <div > <Link to="/">HOME</Link></div>
