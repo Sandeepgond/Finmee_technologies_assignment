@@ -3,6 +3,16 @@ import "./UpperSection.css"
 import systeminage from "../assests/systemimage.png"
 
 const UpperSection = () => {
+  const countries = [
+    'German',
+    'Arabic',
+    'Chinese',
+    'Dutch',
+    'French',
+    'Italian',
+    'Russian',
+    'Spanish'
+  ];
   return (
     <>
     <div className='factory_div'>
@@ -16,13 +26,15 @@ const UpperSection = () => {
             <img className='system_img' src={systeminage} alt="" />
          </div>
       </div>
-      {/* <select className='language_selection'>
-          <option>Arabic </option>
-          <option>Chinees</option>
-          <option>Dutch</option>
-          <option>French</option>
-          <option></option>
-      </select> */}
+      <div className='country_box'>
+            <select id='countries' name='countries'>
+              {countries.map((country, index) => (
+                <option key={index} value={country.toLowerCase()}>
+                  {country}
+                </option>
+              ))}
+            </select>
+          </div>
     </div>
     </>
   )
